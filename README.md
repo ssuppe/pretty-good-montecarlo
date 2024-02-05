@@ -32,3 +32,5 @@ Pretty Good Monte Carlo does not have a custom UI - instead it uses [named range
 1) **Input variables** are the variables that will be randomly selected. The named range must end with "_mci" ("monte carlo input"). It should reference the cell that PCG will insert the randomly selected value. The next two cells in the same row should be the minimum and maximum of the range. PCG will randomly pick a number from that range, over a normal distribution, using the Box-Muller method. You can have as many as you'd like.
 2) **Output variables** are the variables that have the final answer of your model. The named range must end with "_mco" ("monte carlo output"). PCG will record the result of your model on each of its randomized trials. You can have as many as you'd like.
 3) **Output order** - you must have a 2 column table, with a named range of "output_order." The first column is the name of each output variable. The 2nd column is the human-friendly/pretty printed name you'd like PCG to output to the "MC" results tab as a header.
+
+# Find this useful? [![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/U6U6U4VNU)
