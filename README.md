@@ -11,7 +11,7 @@ Make a copy of the [demo spreadsheet](https://docs.google.com/spreadsheets/d/1tk
 
 Pretty Good Monte Carlo allows you to run randomized trials of as many input variables as you need, recording the results of as many output variables as you need. It then writes the results of all those randomized trials to a sheet called "MC." To stay within Google Apps Script time limit, it only runs 100 trials at a time. By running multiple times, you can continue to append more and more trials.
 
-A few caveates:
+A few caveats:
 *  This is currently for power users who are familiar with things like named ranges
 *  The only distribution that is supported is the Normal distribution.
 *  There is no data or formatting validation. The script expects everything to be written correctly and well formed, or will die ungracefully. That being said, it's not so difficult.
@@ -20,8 +20,8 @@ A few caveates:
 1) Go to Extensions > Apps Script
 1) Create two files (Code.gs and Util.gs). Copy/paste the code from the files in this repository into those two files respectively.
 1) Reload the spreadsheet. You should now have a menu item at the top called "Monte Carlo"
-1) Create your named ranges for inputs/outs as specified in the [demo spreadsheet](https://docs.google.com/spreadsheets/d/1tk-_XRlynu7NkyomjNsSYGbdB1qTGoSdjVB1ckgyl30/edit#gid=0), or as described below
-1) Make sure you don't have a sheet called "MC" (PCG expects a blank one when it runs a new model)
+1) Create your named ranges for inputs/outputs as specified in the [demo spreadsheet](https://docs.google.com/spreadsheets/d/1tk-_XRlynu7NkyomjNsSYGbdB1qTGoSdjVB1ckgyl30/edit#gid=0), or as described below
+1) Make sure you don't have a sheet called "MC" (PGMC expects a blank one when it runs a new model)
 1) Press Monte Carlo > Run
 1) Wait
 1) See your results on the "MC" sheet
